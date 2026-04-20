@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CTG Referral Portal | Concussion Therapy Group</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">CTG | Concussion Therapy Group</div>
+    <a href="#referral-form" class="btn-header">Submit Referral</a>
+</header>
+
+<section class="hero">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+        <h1>Expert Concussion Care, Streamlined.</h1>
+        <p>The premier secure referral portal for Law Firms and Providers.</p>
+
+        <div class="hero-buttons">
+            <a href="#referral-form" class="btn-primary">Get Started</a>
+            <a href="#features" class="btn-secondary">Learn More</a>
+        </div>
+    </div>
+</section>
+
+<section class="features" id="features">
+    <h2>Why Refer To Us?</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <i class="fas fa-brain"></i>
+            <h3>Advanced Diagnostics</h3>
+            <p>State-of-the-art concussion evaluation and recovery planning.</p>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-bolt"></i>
+            <h3>Fast Response</h3>
+            <p>Referrals reviewed quickly so treatment can begin immediately.</p>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-shield-alt"></i>
+            <h3>Secure Intake</h3>
+            <p>Protected referral handling with professional standards.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="form-section" id="referral-form">
+    <div class="form-box">
+
+        <h2>Secure Referral Intake</h2>
+
+        <form action="https://formsubmit.co/admin@ligonrazon.solutions" method="POST">
+
+            <input type="text" name="Law Firm" placeholder="Law Firm / Provider Name" required>
+
+            <input type="text" name="Case Manager" placeholder="Case Manager / Paralegal" required>
+
+            <input type="text" name="Patient Name" placeholder="Patient Full Name" required>
+
+            <input type="text" name="Patient Address" placeholder="Patient Full Address" required>
+
+            <div class="row">
+                <input type="date" name="DOB" required>
+                <input type="date" name="DOI" required>
+            </div>
+
+            <div class="row">
+                <input type="text" name="Phone" placeholder="Phone Number" required>
+
+                <select name="Workers Comp">
+                    <option value="">Workers Comp Case?</option>
+                    <option>Yes</option>
+                    <option>No</option>
+                </select>
+            </div>
+
+            <textarea name="Notes" rows="4" placeholder="Additional Details"></textarea>
+
+            <input type="hidden" name="_subject" value="New CTG Referral">
+            <input type="hidden" name="_captcha" value="false">
+
+            <button type="submit">Submit Referral</button>
+
+        </form>
+    </div>
+</section>
+
+<footer>
+    <h3>CTG | Concussion Therapy Group</h3>
+    <p>Professional Concussion Recovery Solutions</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
